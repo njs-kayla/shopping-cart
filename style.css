@@ -71,3 +71,14 @@ button{
     padding: 0 10px;
     color: rgb(95, 125, 168);
 }
+.scaleDown{
+    animation: scaleDown .4s forwards;
+}
+@keyframes scaleDown {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
