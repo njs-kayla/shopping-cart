@@ -50,35 +50,35 @@
                         {
                             id: '1',
                             itemName: '豪華牛肉漢堡套餐',
-                            imgUrl: '/1.jpg',
+                            imgUrl: '1.jpg',
                             price: '180',
                             count: 1
                         },
                         {
                             id: '2',
                             itemName: '雞肉芝士漢堡套餐',
-                            imgUrl: '/2.jpg',
+                            imgUrl: '2.jpg',
                             price: '150',
                             count: 1
                         },
                         {
                             id: '3',
                             itemName: '素食漢堡套餐',
-                            imgUrl: '/3.jpg',
+                            imgUrl: '3.jpg',
                             price: '130',
                             count: 1
                         },
                         {
                             id: '4',
                             itemName: '香脆雞腿堡套餐',
-                            imgUrl: '/4.jpg',
+                            imgUrl: '4.jpg',
                             price: '140',
                             count: 1
                         },
                         {
                             id: '5',
                             itemName: '美式經典漢堡套餐',
-                            imgUrl: '/5.jpg',
+                            imgUrl: '5.jpg',
                             price: '160',
                             count: 1
                         },
@@ -88,7 +88,8 @@
             computed: {
                 totalAmount() {
                     return this.itemList.reduce((total, item) => total + (item.price * item.count), 0);
-                }
+                }//this 代表 vue 實體本身，total 表示 reduce() 中每次累加的結果，item 是 itemList 每一個元素
+                 //箭頭函式是用於處理陣列中每個元素的函式，0 為第一次呼叫函式時的累加器初始值。
             },
             methods: {
                 handlePlus(item) {
