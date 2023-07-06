@@ -27,7 +27,7 @@
     padding: 10px;
 }
 .item_header .item_detail{
-    width: 220px;
+    width: 200px;
     text-align: center;
 }
 .item_body{
@@ -38,10 +38,23 @@
 }
 .item_body .item_detail div{
     margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
 }
 .item_body img{
     width: 200px;
     max-height:150px ;
+    border-radius: 15px;
+}
+.count button:nth-child(1){
+    padding: 5px 10px;
+}
+.count button{
+    padding: 5px 8px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: burlywood;
+    transition: .3s;
 }
 button{
     text-decoration: none;
@@ -58,7 +71,7 @@ button{
     background-color: rgb(124, 46, 46);
     transition: .3s;
 }
-.item_body .operate button:hover{
+button:hover{
     scale: 1.1;
 }
 .item_total{
